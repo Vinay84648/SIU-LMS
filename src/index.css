@@ -1,0 +1,107 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap';
+@import 'tailwindcss';
+
+/* ─── Light Theme: White dominant, #8c1515 accent only ─── */
+:root {
+  --bg: #FFFFFF;
+  --bg-2: #F5F5F5;
+  --surface: #FFFFFF;
+  --surface-2: #FFFFFF;
+  --surface-hover: #FFF5F5;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.16);
+  --text-1: #111111;
+  --text-2: #333333;
+  --text-3: #666666;
+  --text-4: #999999;
+  --sidebar: #FFFFFF;
+  --topbar: rgba(255, 255, 255, 0.95);
+  --shadow-1: 0 1px 3px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.04);
+  --shadow-2: 0 4px 12px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04);
+  --shadow-3: 0 8px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-4: 0 20px 64px rgba(0,0,0,0.12), 0 6px 24px rgba(0,0,0,0.06);
+
+  /* Primary accent: #8c1515 — used sparingly */
+  --primary: #8c1515;
+  --primary-fg: #ffffff;
+  --primary-muted: rgba(140, 21, 21, 0.07);
+  --accent: #a01818;
+
+  /* Semantic — neutral-toned */
+  --success: #16a34a;
+  --success-muted: rgba(22, 163, 74, 0.08);
+  --warning: #d97706;
+  --warning-muted: rgba(217, 119, 6, 0.08);
+  --danger: #dc2626;
+  --danger-muted: rgba(220, 38, 38, 0.08);
+  --info: #2563eb;
+  --info-muted: rgba(37, 99, 235, 0.08);
+}
+
+/* ─── Dark Theme: Soft dark grays, #8c1515 accent ─── */
+.dark {
+  --bg: #141414;
+  --bg-2: #1E1E1E;
+  --surface: rgba(28, 28, 28, 0.92);
+  --surface-2: rgba(36, 36, 36, 0.96);
+  --surface-hover: rgba(140, 21, 21, 0.08);
+  --border: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --text-1: #F5F5F5;
+  --text-2: #D4D4D4;
+  --text-3: #9A9A9A;
+  --text-4: #666666;
+  --sidebar: rgba(20, 20, 20, 0.98);
+  --topbar: rgba(20, 20, 20, 0.94);
+  --shadow-1: 0 1px 3px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.03);
+  --shadow-2: 0 4px 12px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-3: 0 8px 32px rgba(0,0,0,0.6), 0 2px 8px rgba(0,0,0,0.4);
+  --shadow-4: 0 20px 64px rgba(0,0,0,0.7), 0 6px 24px rgba(0,0,0,0.5);
+
+  --primary: #c0392b;
+  --primary-fg: #ffffff;
+  --primary-muted: rgba(192, 57, 43, 0.12);
+  --accent: #e74c3c;
+
+  --success: #22c55e;
+  --success-muted: rgba(34, 197, 94, 0.10);
+  --warning: #f59e0b;
+  --warning-muted: rgba(245, 158, 11, 0.10);
+  --danger: #ef4444;
+  --danger-muted: rgba(239, 68, 68, 0.10);
+  --info: #3b82f6;
+  --info-muted: rgba(59, 130, 246, 0.10);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text-1);
+}
+
+.mesh-bg {
+  background: var(--bg);
+}
+
+.dark .mesh-bg {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.15); border-radius: 100px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(140, 21, 21, 0.35); }
+
+:focus-visible {
+  outline: 2px solid rgba(140, 21, 21, 0.35);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
