@@ -1,0 +1,10 @@
+{
+  "description": "Enterprise-grade SaaS LMS admin portal offering role-based dashboards, advanced analytics, and intuitive tools for managing universities, departments, and users efficiently.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
