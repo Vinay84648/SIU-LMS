@@ -1,11 +1,11 @@
 import { useState, useEffect, createContext, useContext } from 'react'
 import Shell from './components/Shell'
 import CommandPalette from './components/CommandPalette'
-import SuperAdminDashboard from './components/SuperAdminDashboard'
-import UniversityAdminDashboard from './components/UniversityAdminDashboard'
-import DepartmentAdminDashboard from './components/DepartmentAdminDashboard'
-import FacultyDashboard from './components/FacultyDashboard'
-import StudentDashboard from './components/StudentDashboard'
+import SuperAdminDashboard from './components/super/SuperAdminDashboard'
+import UniversityAdminDashboard from './components/university/UniversityAdminDashboard'
+import DepartmentAdminDashboard from './components/department/DepartmentAdminDashboard'
+import FacultyDashboard from './components/faculty/FacultyDashboard'
+import StudentDashboard from './components/student/StudentDashboard'
 import StaticViews from './components/StaticViews'
 
 export const ThemeContext = createContext({ theme: 'light', toggleTheme: () => {} })
