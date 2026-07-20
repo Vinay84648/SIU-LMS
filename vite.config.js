@@ -46,7 +46,7 @@ function figmaSiteConfiguration(config) {
   function replaceHtmlCommentSlot(html, slotName, content) {
     return html.replace(`<!-- ${slotName} -->`, content);
   }
-  const title = config.title ?? "Figma Make App";
+  const title = config.title ?? "LMS Admin";
   const description = config.description ?? "";
   const favicon = config.icons?.icon ?? "";
   const socialImage = config.openGraph?.image ?? "";
