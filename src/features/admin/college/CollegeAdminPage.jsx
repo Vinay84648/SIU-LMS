@@ -92,7 +92,7 @@ export default function CollegeAdminDashboard() {
       {/* Header */}
       <div style={{ marginBottom: 24, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between' }}>
         <div>
-          <div style={{ fontSize: 11, color: '#8B5CF6', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 4 }}>MIT · College of Engineering</div>
+          <div style={{ fontSize: 11, color: '#8B5CF6', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 4 }}>SCHOOL OF TECHNOLOGY & AI</div>
           <h1 style={{ fontSize: 24, fontWeight: 750, color: 'var(--text-1)', margin: 0, letterSpacing: '-0.02em' }}>College Admin Dashboard</h1>
           <p style={{ fontSize: 13, color: 'var(--text-3)', margin: '4px 0 0' }}>Academic Operations · Fall 2026 · Week 14 of 18</p>
         </div>
