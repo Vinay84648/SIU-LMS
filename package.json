@@ -1,6 +1,7 @@
 {
   "name": "figma-make-app",
   "private": true,
+  "homepage": "https://Vinay84648.github.io/SIU-LMS/",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
