@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import { PublicLayout } from './PublicLayout'
 import { PrivateLayout } from './PrivateLayout'
 import { RoleGuard } from '../features/auth/RoleGuard'
@@ -43,7 +43,7 @@ import {
 } from '../features/student/components/StudentViews'
 
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     element: <PublicLayout />,
     children: [
