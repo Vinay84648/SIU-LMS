@@ -314,12 +314,24 @@ export function Sidebar() {
             <path d="M22 4h-4"></path>
           </svg>
         </div>
-        {!sidebarCollapsed && (
-          <div>
-            <div style={{ fontSize: 15, fontWeight: 750, color: 'var(--text-1)', letterSpacing: '-0.025em', lineHeight: 1.2 }}>SIU</div>
-            <div style={{ fontSize: 10, color: 'var(--text-4)', letterSpacing: '0.08em', textTransform: 'uppercase', fontWeight: 500 }}>LMS Platform</div>
-          </div>
-        )}
+        {!sidebarCollapsed && (() => {
+          let brandTitle = 'Zdotapps Admin';
+          let brandSubtitle = 'LMS Platform';
+          
+          if (role === 'university') {
+            brandTitle = 'SIU';
+          } else if (['college', 'department', 'faculty', 'student'].includes(role)) {
+            brandTitle = 'SIU';
+            brandSubtitle = 'School of Technology & AI';
+          }
+
+          return (
+            <div style={{ minWidth: 0, whiteSpace: 'nowrap' }}>
+              <div style={{ fontSize: brandTitle.length > 15 ? 12 : 15, fontWeight: 750, color: 'var(--text-1)', letterSpacing: '-0.025em', lineHeight: 1.2, overflow: 'hidden', textOverflow: 'ellipsis' }}>{brandTitle}</div>
+              <div style={{ fontSize: 10, color: 'var(--text-4)', letterSpacing: '0.08em', textTransform: 'uppercase', fontWeight: 500 }}>{brandSubtitle}</div>
+            </div>
+          );
+        })()}
       </div>
 
       {/* Role switcher */}
